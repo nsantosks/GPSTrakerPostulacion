@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulación Nestor Santos - Analista de Datos para GPS Traker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+        :root {
+            --primary-color: #D32F2F; /* Rojo Corporativo GPS Traker */
+            --secondary-color: #BDBDBD; /* Plateado/Gris Corporativo GPS Traker */
+            --text-color: #333333;
+            --light-text-color: #555555;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            --darker-primary-color: #B71C1C; /* Un rojo más oscuro para hovers */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 30px auto;
+            padding: 0 20px; /* Padding lateral para pantallas pequeñas */
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        header img.profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8em;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4em;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.95); /* Ajustado para mejor legibilidad sobre el degradado */
+            margin-top: 0;
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            box-shadow: var(--hover-shadow);
+        }
+
+        .section h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            color: var(--primary-color);
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color); /* Borde inferior rojo */
+            display: inline-block;
+        }
+
+        .section p, .section ul li {
+            font-size: 1.05em;
+            color: var(--light-text-color);
+            margin-bottom: 1em;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .section strong {
+            font-weight: 600;
+            color: var(--primary-color); /* Texto fuerte en rojo */
+        }
+
+        .highlight {
+            background-color: rgba(211, 47, 47, 0.1); /* Un rojo muy claro para resaltar */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .dashboard-showcase {
+            text-align: center;
+        }
+
+        .dashboard-showcase img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid var(--border-color);
+            border-radius: 8px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dashboard-showcase img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(211,47,47,0.3); /* Sombra con tono rojo */
+        }
+
+        .dashboard-caption {
+            font-size: 0.95em;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color); /* Botón rojo */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: var(--darker-primary-color); /* Rojo más oscuro al pasar el mouse */
+            transform: translateY(-2px);
+        }
+        
+        .company-info {
+            background-color: #f9f9f9; /* Un fondo ligeramente diferente para esta sección */
+            border-left: 5px solid var(--primary-color);
+        }
+        .company-info h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            font-size: 1.3em;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9em;
+            color: var(--light-text-color);
+            border-top: 1px solid var(--border-color);
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            header h2 {
+                font-size: 1.2em;
+            }
+            .section h3 {
+                font-size: 1.5em;
+            }
+            .section p {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            header img.profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+             header h1 {
+                font-size: 1.8em;
+            }
+            header h2 {
+                font-size: 1em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://www.dropbox.com/scl/fi/ssmwr3w27v0e50tdzicgm/ProfileV01.jpg?rlkey=6rio5ubg2k4o0kqqwux8ug2dp&dl=1" alt="Foto de Perfil Nestor Santos" class="profile-pic">
+            <h1>Nestor Santos</h1>
+            <h2>Analista de Datos | Especialista en Inteligencia de Negocios</h2>
+        </header>
+
+        <div class="section" id="introduction">
+            <h3>Mi Propuesta de Valor para GPS Traker</h3>
+            <p>Soy un profesional del análisis de datos con <strong>más de 5 años de experiencia</strong> en la transformación de datos complejos en insights accionables. Mi objetivo es aportar valor tangible a GPS Traker, alineándome con su misión de ser <span class="highlight">líderes en la gestión de flotas</span> y ayudarles a <span class="highlight">maximizar la eficiencia y minimizar los costos operativos</span> de sus clientes mediante el poder de los datos.</p>
+        </div>
+
+        <div class="section" id="analytical-skills">
+            <h3>Capacidad Analítica y Dominio Técnico</h3>
+            <p>Mi dominio de herramientas como <strong>Power BI, SQL, Excel Avanzado</strong> y mi creciente interés en Python para análisis de datos, son fundamentales para extraer valor de los datos telemáticos. Puedo analizar patrones de conducción, consumo de combustible, eficiencia de rutas y mantenimientos predictivos, convirtiendo grandes volúmenes de información en <span class="highlight">soluciones que mejoren el control, la seguridad y la eficiencia</span> que GPS Traker ofrece.</p>
+            <p>Con experiencia en el desarrollo de KPIs y dashboards interactivos, puedo generar reportes que faciliten la toma de decisiones estratégicas tanto para GPS Traker como para sus clientes, utilizando sus <span class="highlight">herramientas tecnológicas innovadoras</span> de manera óptima.</p>
+        </div>
+
+        <div class="section company-info" id="company-alignment">
+            <h3>Alineación con GPS Traker</h3>
+            <p>Me identifico profundamente con la cultura y los objetivos de GPS Traker. Su enfoque en la innovación y la excelencia en el servicio son motores que también impulsan mi desarrollo profesional.</p>
+            
+            <p>A través del análisis de datos, puedo contribuir a identificar tendencias, optimizar la oferta de "tecnología de vanguardia" y asegurar que el servicio responda efectivamente a las necesidades detectadas.</p>
+
+            <p>Dentro de mis principales valores destacan la <strong>integridad</strong> en el manejo de datos, la <strong>transparencia</strong> en los hallazgos y la <strong>innovación</strong> constante en las metodologías de análisis. Creo firmemente que estos principios son la base para construir relaciones de confianza y alcanzar el éxito.</p>
+        </div>
+        
+        <div class="section" id="contribution">
+            <h3>Contribución Estratégica como Analista de Datos</h3>
+            <p>Como Analista de Datos en GPS Traker, mi enfoque será:</p>
+            <ul>
+                <li>Desarrollar y mantener dashboards que proporcionen <span class="highlight">visibilidad en tiempo real</span> del rendimiento de las flotas.</li>
+                <li>Identificar oportunidades de <span class="highlight">optimización de rutas y reducción de costos</span> a través del análisis de datos históricos y en tiempo real.</li>
+                <li>Colaborar en la creación de modelos para <span class="highlight">mantenimiento predictivo</span>, aumentando la vida útil de los vehículos y la seguridad.</li>
+                <li>Apoyar al equipo profesional con <span class="highlight">insights basados en datos</span> para mejorar la toma de decisiones y la estrategia comercial.</li>
+                <li>Fomentar una cultura de datos, promoviendo la <span class="highlight">innovación continua</span> en los servicios ofrecidos.</li>
+            </ul>
+        </div>
+
+        <div class="section dashboard-showcase" id="dashboard-example">
+            <h3>Ejemplo de Dashboard Interactivo</h3>
+            <p>A continuación, una muestra de un tablero que he construido (datos con fines ilustrativos, fácilmente adaptable al análisis de flotas y telemática):</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNzE1MGYxMGMtMTU0MC00NGI5LWE5NTUtZTg0MmVkMjQyZDNjIiwidCI6IjZmMGJiNzJmLTUzNzctNGRkZi05MzZhLWI2YzcyYmYyMWFlMiIsImMiOjF9" target="_blank" title="Ver Tablero Interactivo">
+                <img src="https://www.dropbox.com/scl/fi/7vqkc2gsgy3xizy0agx59/CapturaDashboard.JPG?rlkey=kzm11w5zkzinvlm5xsets3t1z&dl=1" alt="Vista previa del Tablero Power BI - Ejemplo Aplicable">
+            </a>
+            <p class="dashboard-caption">Haga clic en la imagen para explorar el tablero interactivo en Power BI. Este tipo de visualización puede adaptarse para mostrar KPIs de gestión de flotas.</p>
+        </div>
+
+        <div class="section" id="contact">
+            <h3>Oportunidad de Entrevista</h3>
+            <p>Agradecería enormemente la oportunidad de una entrevista para discutir en detalle cómo mis habilidades y experiencia como Analista de Datos pueden fortalecer el equipo de GPS Traker y contribuir a alcanzar sus objetivos estratégicos.</p>
+            <a href="https://www.linkedin.com/in/ingnsantos/" target="_blank" class="cta-button">
+                Ver mi Perfil en LinkedIn
+            </a>
+            <a href="https://drive.google.com/file/d/1TCWStkbjscmZTLdKIdv5mP62AP_GUKyA/view?usp=drive_link" target="_blank" class="cta-button">
+                Descargar CV Actualizado
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Nestor Santos. Todos los derechos reservados.</p>
+        <p>Diseñado como parte de mi postulación para Analista de Datos en GPS Traker.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
